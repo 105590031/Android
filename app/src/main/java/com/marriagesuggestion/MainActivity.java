@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
             String strSug = getString(R.string.suggestion);
             if (strSex.equals(getString(R.string.sex_male)))
-                if (iAge < 30) {
+                if (iAge < 28) {
                     strSug += getString(R.string.sug_not_hurry);
                     Log.d("MarriSug", "man, don't hurry");
-                } else if (iAge >35)  {
+                } else if (iAge > 33) {
                     strSug += getString(R.string.sug_get_married);
                     Log.d("MarriSug", "man, hurry to get married!");
                 } else {
@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("MarriSug", "man, start to find girlfriend!");
                 }
             else
-                if (iAge < 28) {
+                if (iAge < 25) {
                     strSug += getString(R.string.sug_not_hurry);
                     Log.d("MarriSug", "woman, don't hurry!");
-                } else if ( iAge > 32) {
+                } else if (iAge > 30) {
                     strSug += getString(R.string.sug_get_married);
                     Log.d("MarriSug", "woman, hurry to get married!");
                 } else {
