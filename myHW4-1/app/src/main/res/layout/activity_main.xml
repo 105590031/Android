@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="edu.ntut.user.myhw3.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionTitleBackground"
+            android:padding="@dimen/myPadding"
+            android:text="@string/sex"
+            android:textColor="@color/sectionTitleFont"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/rdgSex"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rdoMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/sex_male" />
+
+            <RadioButton
+                android:id="@+id/rdoFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sex_female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionTitleBackground"
+            android:padding="@dimen/myPadding"
+            android:text="@string/age"
+            android:textColor="@color/sectionTitleFont"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spAge"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="12sp"
+            android:entries="@array/maleAgeList" />
+
+        <TextView
+            android:id="@+id/txtHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sectionTitleBackground"
+            android:padding="@dimen/myPadding"
+            android:text="@string/habitTitle"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            tools:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/divLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <ScrollView
+            android:id="@+id/scvHabitList"
+            style="@android:style/Widget.DeviceDefault.ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/darker_gray"
+            android:clipToPadding="false"
+            android:scrollbarStyle="insideOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Sing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sing" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Dance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dance" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/travel" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reading" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Writing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/writing" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Climbing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/climbing" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Swim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swim" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Eating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eating" />
+
+                <CheckBox
+                    android:id="@+id/chkHabit_Drawing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drawing" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/divLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/btnOK"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/myPadding"
+            android:text="@string/suggestion"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/myPadding"
+            android:text="@string/habitInfo"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
