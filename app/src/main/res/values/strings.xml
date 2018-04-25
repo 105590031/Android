@@ -1,0 +1,20 @@
+<resources>
+<string name="app_name">APP01_105590031</string>
+<string name="sex">成績</string>
+<string name="sex_hint">請輸入整數成績</string>
+<string name="age">age</string>
+<string name="age_hint">(input age)</string>
+<string name="btn_ok">成績轉換</string>
+<string name="suggestion">等第：</string>
+<string name="sug_not_hurry100">grade = X</string>
+<string name="sug_not_hurry90">grade = A</string>
+<string name="sug_not_hurry80">grade = B</string>
+<string name="sug_not_hurry70">grade = C</string>
+<string name="sug_not_hurry60">grade = D</string>
+<string name="sug_not_hurry59">grade = F</string>
+<string name="sug_not_hurry">not hurry.</string>
+<string name="sug_get_married">get married！</string>
+<string name="sug_find_couple">find a couple。</string>
+
+<string name="sex_male">male</string>
+</resources>
